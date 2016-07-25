@@ -1,0 +1,9 @@
+{
+    "name": "Attila",
+    "description": "A fork of the Attila Ghost theme designed by @zutrinken.",
+    "version": "0.0.0",
+    "requires": "1.0.0",
+    "author": "Cory LaViska",
+    "license": "MIT",
+    "url": "https://github.com/postleaf/attila"
+}

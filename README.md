@@ -1,13 +1,6 @@
 # Attila
 
-A content focused responsive theme for [Ghost](http://github.com/tryghost/ghost/).
-
-## Demo
-
-* [Blog](http://attila.zutrinken.com/)
-* [Post](http://attila.zutrinken.com/demo/)
-* [Tag Archive](http://attila.zutrinken.com/tag/general/)
-* [Author Archive](http://attila.zutrinken.com/author/zutrinken/)
+A content focused responsive theme for [Postleaf](https://www.postleaf.org/).
 
 ## Features
 
@@ -20,25 +13,6 @@ A content focused responsive theme for [Ghost](http://github.com/tryghost/ghost/
 * Automatic code syntax highlight and line numbers
 * Disqus support
 * Sharing buttons
-
-## Setup
-
-To enable [Disqus](https://disqus.com/) comments go to your blogs code injection settings and add `<script>var disqus = 'YOUR_DISQUS_SHORTNAME';</script>` to your blog header.
-
-## Development
-
-Install [Grunt](http://gruntjs.com/getting-started/):
-
-	npm install -g grunt-cli
-	
-Install Grunt dependencies:
-
-	npm install
-
-Build Grunt project:
-
-	grunt build
-	
 
 ## Copyright & License
 

@@ -1,0 +1,56 @@
+{{> header}}
+
+<header id="blog-header"{{#if cover}} class="has-cover"{{else}}{{#if @settings.cover}} class="has-cover"{{/if}}{{/if}}>
+	<div class="inner">
+		<nav id="navigation">
+			{{#if @settings.logo}}
+				<span class="blog-logo">
+					<a href="{{url}}"><img src="{{url @settings.logo}}" alt="Blog Logo" /></a>
+				</span>
+			{{else}}
+				<span id="home-button" class="nav-button">
+					<a class="home-button" href="{{url}}" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+				</span>
+			{{/if}}
+			{{#if @settings.navigation}}
+				<span id="menu-button" class="nav-button">
+					<a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+				</span>
+			{{/if}}
+		</nav>
+		<h1 class="post-title">
+			{{@meta.title}}
+		</h1>
+		<span class="post-meta">
+			{{@request.http_code}} error
+		</span>
+		{{#if cover}}
+			<div class="blog-cover cover" style="background-image: url('{{url cover}}');"></div>
+		{{else}}
+			{{#if @settings.cover}}
+				<div class="blog-cover cover" style="background-image: url('{{url @settings.cover}}');"></div>
+			{{/if}}
+		{{/if}}
+	</div>
+</header>
+
+
+<div id="index" class="container">
+
+	<main class="content" role="main">
+
+		{{#is pagination.total_items 0}}
+			<div class="post no-posts">
+				<div class="inner">
+					<h3>Try Again</h3>
+					<p>Try searching or <a href="{{url}}">browsing the homepage</a></p>
+					{{> search_form}}
+				</div>
+			</div>
+		{{/is}}
+
+	</main>
+
+</div>
+
+{{> footer}}

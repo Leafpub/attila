@@ -3,10 +3,21 @@
 	<div class="nav-wrapper">
 		<p class="nav-label">Menu</p>
 		<ul>
-			{{#foreach navigation}}
-			<li class="nav-{{slug}}{{#if current}} active{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
-			{{/foreach}}
-			<li class="nav-rss"><a href="{{@blog.url}}/rss/"><i class="ic ic-rss"></i> Subscribe</a></li>
+			{{#navigation}}
+				{{#each items}}
+					<li class="nav-{{slug}}{{#if current}} active{{/if}}" role="presentation">
+						<a href="{{url}}">{{label}}</a>
+					</li>
+				{{/each}}
+			{{/navigation}}
+			<li class="nav-search">
+				<form action="{{search_url}}" method="get">
+					<input type="search" name="s" placeholder="Search">
+				</form>
+			</li>
+			<li class="nav-rss">
+				<a href="{{feed_url}}"><i class="ic ic-rss"></i> Subscribe</a>
+			</li>
 		</ul>
 	</div>
 </nav>
