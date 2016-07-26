@@ -726,7 +726,7 @@ img {
   line-height: 1em;
   text-decoration: none; }
 
-.home-template .blog-name {
+.homepage .blog-name {
   font-size: 3em; }
 
 .has-cover .blog-name {
@@ -746,7 +746,7 @@ img {
   font-size: 1em;
   line-height: 1.5em; }
 
-.home-template .blog-description {
+.homepage .blog-description {
   font-size: 1.5em; }
 
 .has-cover .blog-description {
@@ -836,12 +836,20 @@ img {
   line-height: 1.6em; }
 
 .nav-search {
-    padding: 3rem; }
+    padding: 0 3rem 3rem 3rem; }
 
 .nav-search input {
+    border-radius: 2em;
+    border: solid 1px #ccc;
     display: block;
     width: 100%;
-}
+    padding: .25em .75em;
+    box-sizing: border-box;
+    transition: .2s border; }
+
+.nav-search input:focus {
+    outline: none;
+    border: solid 1px #f26a3d; }
 
 /* ==========================================================================
    Menu
@@ -966,7 +974,8 @@ img {
   color: #212226;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-weight: 400; }
+  font-weight: 400;
+  transition: .2s background; }
 
 #menu li a:hover,
 #menu li a:focus {
@@ -1704,4 +1713,16 @@ img.align-right,
 [data-embed].align-right {
     float: right;
     margin-left: 1em;
+}
+
+/* ==========================================================================
+  Customize editable guidelines.
+  ========================================================================== */
+
+body [data-postleaf-id="post:title"]:hover {
+    outline-color: rgba(255, 255, 255, .5);
+}
+
+body [data-postleaf-id="post:title"]:focus {
+    outline-color: white;
 }

@@ -1,29 +1,31 @@
 {{!-- Pagination --}}
 {{#pagination}}
-	<nav class="pagination" role="pagination">
-		<div class="inner">
+	{{#is total_pages '>' 1}}
+		<nav class="pagination" role="pagination">
+			<div class="inner">
 
-			{{#if previous_page_url}}
-				<a class="pagination-next" href="{{previous_page_url}}">
-					<i class="ic ic-arrow-left"></i>
-					<span class="pagination-label">Newer Posts</span>
-				</a>
-			{{/if}}
+				{{#if previous_page_url}}
+					<a class="pagination-next" href="{{previous_page_url}}">
+						<i class="ic ic-arrow-left"></i>
+						<span class="pagination-label">Newer Posts</span>
+					</a>
+				{{/if}}
 
-			{{#is total_pages '>' 1}}
-				<span class="pagination-info">
-					Page {{number current_page}} of {{number total_pages}}
-				</span>
-			{{/is}}
+				{{#is total_pages '>' 1}}
+					<span class="pagination-info">
+						Page {{number current_page}} of {{number total_pages}}
+					</span>
+				{{/is}}
 
-			{{#if next_page_url}}
-				<a class="pagination-prev" href="{{next_page_url}}">
-					<span class="pagination-label">Older Posts</span>
-					<i class="ic ic-arrow-right"></i>
-				</a>
-			{{/if}}
+				{{#if next_page_url}}
+					<a class="pagination-prev" href="{{next_page_url}}">
+						<span class="pagination-label">Older Posts</span>
+						<i class="ic ic-arrow-right"></i>
+					</a>
+				{{/if}}
 
-			<div class="clear"></div>
-		</div>
-	</nav>
+				<div class="clear"></div>
+			</div>
+		</nav>
+	{{/is}}
 {{/pagination}}

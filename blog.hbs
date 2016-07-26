@@ -15,8 +15,8 @@
 			{{/if}}
 		</nav>
 		<h1 class="blog-name"><a href="{{url}}">{{@settings.title}}</a></h1>
-		{{#if @settings.description}}
-		<span class="blog-description">{{@settings.description}}</span>
+		{{#if @settings.tagline}}
+		<span class="blog-description">{{@settings.tagline}}</span>
 		{{/if}}
 		{{#if @settings.cover}}
 		<div class="blog-cover cover" style="background-image: url('{{url @settings.cover}}');"></div>

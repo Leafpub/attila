@@ -125,23 +125,4 @@ jQuery(function($) {
 	// Only apply Fitvids when we're not in the Postleaf editor
 	if(!window.postleaf) video();
 
-	/* ==========================================================================
-	   Initialize and load Disqus
-	   ========================================================================== */
-
-	if (typeof disqus === 'undefined') {
-		$('.post-comments').css({
-			'display' : 'none'
-		});
-	} else {
-		$('#show-disqus').on('click', function() {
-			$.ajax({
-				type: "GET",
-				url: "//" + disqus + ".disqus.com/embed.js",
-				dataType: "script",
-				cache: true
-			});
-			$(this).parent().addClass('activated');
-		});
-	}
 });
