@@ -668,7 +668,7 @@ img {
   padding: 9em 0 10em;
   background: #000000;
   overflow: hidden;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .25); }
 
 .author-template #blog-header:after,
 #blog-header.has-cover:after {
@@ -1152,7 +1152,7 @@ img {
   padding: 16em 0 2em;
   background: #000000;
   overflow: hidden;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .25); }
 
 .post-cover {
   position: absolute;
@@ -1719,10 +1719,10 @@ img.align-right,
   Customize editable guidelines.
   ========================================================================== */
 
-body [data-postleaf-id="post:title"]:hover {
+body .has-cover [data-postleaf-id="post:title"]:hover {
     outline-color: rgba(255, 255, 255, .5);
 }
 
-body [data-postleaf-id="post:title"]:focus {
+body .has-cover [data-postleaf-id="post:title"]:focus {
     outline-color: white;
 }
