@@ -1,6 +1,6 @@
 # Attila
 
-A content focused responsive theme for [Postleaf](https://www.postleaf.net/), originally designed by [Peter Amende](http://zutrinken.com/) for Ghost.
+A content focused responsive theme for [Leafpub](https://www.leafpub.org/), originally designed by [Peter Amende](http://zutrinken.com/) for Ghost.
 
 ## Features
 
