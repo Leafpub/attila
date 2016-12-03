@@ -1719,10 +1719,10 @@ img.align-right,
   Customize editable guidelines.
   ========================================================================== */
 
-body .has-cover [data-postleaf-id="post:title"]:hover {
+body .has-cover [data-leafpub-id="post:title"]:hover {
     outline-color: rgba(255, 255, 255, .5);
 }
 
-body .has-cover [data-postleaf-id="post:title"]:focus {
+body .has-cover [data-leafpub-id="post:title"]:focus {
     outline-color: white;
 }
