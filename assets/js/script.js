@@ -112,8 +112,8 @@ jQuery(function($) {
 			code.parent().append('<div class="lines">' + numbers + '</div>');
 		});
 	}
-	// Only apply code styling when we're not in the Postleaf editor
-	if(!window.postleaf) codestyling();
+	// Only apply code styling when we're not in the Leafpub editor
+	if(!window.leafpub) codestyling();
 
 	/* ==========================================================================
 	   Responsive Videos with Fitvids
@@ -122,7 +122,7 @@ jQuery(function($) {
 	function video() {
 		$('#wrapper').fitVids();
 	}
-	// Only apply Fitvids when we're not in the Postleaf editor
-	if(!window.postleaf) video();
+	// Only apply Fitvids when we're not in the Leafpub editor
+	if(!window.leafpub) video();
 
 });
